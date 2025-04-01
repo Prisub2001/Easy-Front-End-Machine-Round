@@ -1,0 +1,13 @@
+<div class="container">
+  <p>Counter</p>
+  <h1>{{ counter }}</h1>
+  <div class="buttonBox">
+    <button class="button" (click)="decCnt()" [disabled]="counter == 0">
+      -
+    </button>
+    <button class="button" (click)="incCnt()">+</button>
+    <button class="button" (click)="reset()" [disabled]="counter == 0">
+      Reset
+    </button>
+  </div>
+</div>

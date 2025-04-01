@@ -1,0 +1,71 @@
+/* .container {
+    border: 1px solid black;
+    height: 400px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.buttonBox {
+    margin-top: 250px;
+}
+
+.button{
+    width: 60px;
+    height: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+} */
+
+
+
+.container {
+    border: 1px solid black;
+    height: 400px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.container h1 {
+    font-size: 110px; /* Increased font size */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.container p {
+    font-size: 50px; /* Increased font size */
+    margin-bottom: -15px;
+    margin-top: -40px;
+}
+
+
+.buttonBox {
+    display: flex;
+    justify-content: center; /* Align buttons in a row */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+.button {
+    height: 40px; /* Fixed height */
+    padding: 0 15px; /* Horizontal padding for text */
+    font-size: 20px; /* Adjust font size */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    white-space: nowrap; /* Prevent text from wrapping to a new line */
+}
+
+.button:disabled {
+    background-color: lightgray; /* Disable color change */
+    cursor: not-allowed; /* Show a "not allowed" cursor when disabled */
+}
+
+.button:hover:enabled {
+    background-color: #f0f0f0; /* Slight hover effect when button is enabled */
+}
